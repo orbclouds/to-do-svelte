@@ -14,6 +14,7 @@
 <script lang="ts">
   import { GoogleAnalytics } from '@beyonk/svelte-google-analytics';
   import items from '@app/items';
+  import Orb from '@app/Orb';
 
   let allSelected = false;
   let selected: string[] = [] as string[];
@@ -125,6 +126,8 @@
       .SNOWPACK_PUBLIC_GOOGLE_ANALYTICS_ID,
   ]}
 />
+
+<Orb />
 
 <main>
   <h1>To Do or Not To Do...</h1>
